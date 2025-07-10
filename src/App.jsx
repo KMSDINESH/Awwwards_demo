@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from './Components/Hero'
 import About from './Components/About'
 import Navbar from './Components/Navbar'
+import Features from './Components/Features'
 
 const App = () => {
   return (
@@ -11,6 +12,8 @@ const App = () => {
       <Hero />
 
       <About />
+
+      <Features />
     </main>
   )
 }
