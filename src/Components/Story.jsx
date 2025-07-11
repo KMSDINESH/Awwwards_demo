@@ -62,7 +62,7 @@ const Story = () => {
 
                 <div className='story-img-container'>
                     <div className='story-img-mask'>
-                        <div className='story-img-content'>
+                        <div className='story-img-cotent'>
                             <img 
                             ref={frameRef}
                             onMouseLeave={handleMouseLeave}
@@ -95,9 +95,9 @@ const Story = () => {
                     </p>
 
                     <Button 
-                    id='realm-button'
+                    id=' realm-button'
                     title='discover prologue'
-                    containerClass='mt-4'
+                    containerClass='mt-5'
                     />
 
                 </div>
