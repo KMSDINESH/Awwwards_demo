@@ -94,10 +94,8 @@ const Story = () => {
                         Discover its secrets and shape your fate amidst infinite opportunities.
                     </p>
 
-                    <Button 
-                    id=' realm-button'
-                    title='discover prologue'
-                    containerClass='mt-5'
+                    <Button id=' realm-button' title='discover prologue' containerClass='!bg-blue-50 flex-center 
+                    top-10 gap-1'
                     />
 
                 </div>

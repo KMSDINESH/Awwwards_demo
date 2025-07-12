@@ -4,6 +4,9 @@ import About from './Components/About'
 import Navbar from './Components/Navbar'
 import Features from './Components/Features'
 import Story from './Components/Story'
+import Contact from './Components/Contact'
+import Footer from './Components/Footer'
+
 
 const App = () => {
   return (
@@ -17,6 +20,11 @@ const App = () => {
       <Features />
 
       <Story />
+
+      <Contact />
+
+      <Footer />
+
     </main>
   )
 }

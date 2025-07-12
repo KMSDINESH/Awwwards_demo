@@ -17,6 +17,7 @@ const Hero = () => {
 
     const totalVideos = 4;
     const nextVideoRef = useRef(null); // ref is used to target a specific DOM element
+    const currentVideoRef = useRef(null);
 
     const handleVideoLoad = () => {
         setLoadedVideos((prev) => prev + 1);
@@ -26,6 +27,7 @@ const Hero = () => {
 
     const handleMiniVdClick = () => {
         setHasClicked(true);
+        
 
         setCurrentIndex(upcomingVideoIndex);
     }
@@ -45,7 +47,7 @@ const Hero = () => {
                 scale: 1,
                 width: '100%',
                 height: '100%',
-                duration: 1,
+                duration: 0.5,
                 ease: 'power1.inOut',
                 onStart: () => nextVideoRef.current.play(),
             });
@@ -128,7 +130,7 @@ const Hero = () => {
 
                 <video 
                 src={getVideoSrc(currentIndex === totalVideos - 1 ? 1 : currentIndex)}
-                // autoPlay
+                autoPlay
                 loop
                 muted
                 className='absolute left-0 top-0 size-full 
